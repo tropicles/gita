@@ -1,0 +1,36 @@
+Before starting:- 
+Go to control Panel-> Search 'credential manager'  
+and check if there is GitHub account in windows or web credentials 
+If yes then remove the account
+
+In further execution if it asks for account login to your account
+
+
+git config --global user.name "user Name of GitHub account "
+git config --global user.email "Email of GitHub account"
+git clone "any repo in your account(public)"
+cd "to folder of cloned repo"
+git init
+
+
+New branch:-
+git checkout -b newb
+(do changes in the folder of cloned repo)
+git add .
+git commit -m "Some changes"
+git push origin newb
+
+Merging:-
+git checkout main   (or master)
+git merge newb
+git push
+
+
+Deleting branch:-
+git branch -d newb
+git push 
+git push origin --delete newb
+
+
+
+
